@@ -1,0 +1,273 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+h2 {
+    color: #878787;
+    font-family: 'Fredoka One', cursive;
+}
+
+h4 {
+    font-family: 'Fredoka One', cursive;
+    color: #e6007e;
+    font-size: 1.4em;
+}
+
+
+nav {
+    background-color: #f6f6f6;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    color: #4a4a49;
+    font-size: .75em;
+    margin: 0;
+
+
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 4vw 0 4vw;
+}
+
+li {
+    padding: 1em 3em 1em 3em;
+    list-style: none;
+    border-bottom: 1px solid white;
+}
+
+li:first-child {
+    flex-grow: 1;
+}
+
+.menuicon {
+    display: inline-block;
+    padding: .5em 1em .5em 0em;
+    font-size: 1.7em;
+
+}
+
+.menuselected {
+    display: inline-block;
+    padding: .5em 1em .5em 0;
+    font-size: 1.7em;
+    color: #e6007e;
+
+}
+
+.menuicon:hover {
+    color: #e6007e;
+    transition-duration: 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: #4a4a49;
+}
+
+a:hover {
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+
+/* SEARCH FIELD MENU */
+.searchContainer {
+    display: inline-flex;
+    border: 0px solid #4a4a49;
+    border-radius: 5px;
+    width: 80%;
+
+}
+
+.searchButton {
+    background-color: #4a4a49;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #4a4a49;
+    color: white;
+    padding: 1em;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.searchButton:hover {
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #e6007e;
+    background-color: #e6007e;
+    transition-duration: 0.5s;
+}
+
+.searchButton:focus {
+    outline: none;
+}
+
+#search {
+    padding: 2em 1em 2em 1em;
+    border-width: 1px 0px 1px 1px;
+    border-style: solid;
+    border-color: #4a4a49;
+    border-radius: 5px 0px 0px 5px;
+    width: 100%;
+}
+
+#search:hover {
+    border-width: 1px 0px 1px 1px;
+    border-style: solid;
+    border-color: #e6007e;
+    transition-duration: 0.5s;
+
+}
+
+#search:focus {
+    border-width: 1px 0px 1px 1px;
+    border-style: solid;
+    border-color: #e6007e;
+    outline: none;
+}
+
+
+.uitstekendeBeoordeling {
+    padding: 1em;
+    margin: 0;
+}
+
+.pastaJoe{
+    max-height:30vw;
+    max-width:30vw;
+}
+
+.foodtruckHeader {
+/*    max-width:30vw;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vw;
+    margin-top: 2em;
+    /*    border:1px solid black;*/
+
+}
+
+.foodtruckHeader img {
+    width: 20%;
+    height: auto;
+    padding: .5em;
+}
+
+.foodtruckBody {
+    background-image: url(images/pastajoe.jpg);
+    background-size: cover;
+    background-position: top;
+    /*    background-repeat: no-repeat;*/
+    max-width: 30vw;
+    max-height: 30vw;
+    min-height: 20vw;
+    position: relative;
+    /*    border: 1px solid yellow;*/
+    top: 0;
+    left: 0;
+    margin: 0;
+
+}
+
+/*
+.foodtruckImage {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    margin: 0;
+
+}
+*/
+
+.foodyIcons {
+    position: absolute;
+    z-index: 2;
+    height: 10vw;
+    top: 2vw;
+    left: 25vw;
+    margin: 0;
+
+}
+
+.foodtruckFooter {
+    background-color: black;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+
+}
+
+.foodtruckFooter div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.foodtruckFooter img {
+    width: 30%;
+    margin: .5em 0 .5em 0;
+}
+
+.typoFoodtruckFooter {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: .75em;
+    padding-left: .5em;
+}
+
+
+
+
+
+
+
+
+/* responsive */
+/* Responsive 800px START*/
+@media all and (max-width: 1400px) {}
+
+
+/* Responsive 800px START*/
+@media all and (min-width: 800px) {
+    nav {}
+
+    ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 4vw 0 4vw;
+
+    }
+
+    li {
+        border-bottom: 0px solid white;
+    }
+
+    .menuicon {
+        display: block;
+        text-align: center;
+        padding: .5em 0em .5em 0em;
+        font-size: 1.7em;
+
+    }
+
+    .menuselected {
+        display: block;
+        text-align: center;
+        padding: .5em 0 .5em 0;
+        font-size: 1.7em;
+        color: #e6007e;
+
+    }
+
+}
