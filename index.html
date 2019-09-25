@@ -8,8 +8,9 @@
 
     <!-- FONTS -->
     <script src="https://kit.fontawesome.com/45728a1b7c.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -20,107 +21,336 @@
                 <li>
                     <div class="searchContainer"><input type="text" placeholder="Probeer eens “Italiaans” of “Hamburger”" id="search"><input type="submit" value="Search" class="searchButton"></div>
                 </li>
-                <li><a href="#">
-                        <div class="menuselected"><i class="fas fa-search"></i></div>Ontdek
+                <li><a href="index.html">
+                        <div class="purpleHover">
+                            <div class="menuselected"><i class="fas fa-search"></i></div>Ontdek
+                        </div>
                     </a></li>
                 <li><a href="#">
-                        <div class="menuicon"><i class="fas fa-truck"></i></div>Boekingen
+                        <div class="purpleHover">
+                            <div class="menuicon"><i class="fas fa-truck"></i></div>Boekingen
+                        </div>
                     </a></li>
                 <li><a href="#">
-                        <div class="menuicon"><i class="far fa-comment"></i></div>Inbox
+                        <div class="purpleHover">
+                            <div class="menuicon"><i class="far fa-comment"></i></div>Inbox
+                        </div>
                     </a></li>
                 <li><a href="#">
-                        <div class="menuicon"><i class="far fa-user"></i></div>Profiel
+                        <div class="purpleHover">
+                            <div class="menuicon"><i class="far fa-user"></i></div>Profiel
+                        </div>
                     </a></li>
             </ul>
         </nav>
+
+
+        <div class="topHeader">
+            <img src="images/header.png" alt="header image van een getekende foodtruck" class="frontHeader">
+            <h1 class="logoTekst">Foodtruck booking</h1>
+
+        </div>
+
+        <!--       BRONNEN header image. <a href="https://www.freepik.com/free-photos-vectors/food">Food vector created by freepik - www.freepik.com</a>-->
     </header>
 
     <main>
         <section class="uitstekendeBeoordeling">
             <h2>Trucks met een uitstekende beoordeling</h2>
-            <article class="pastaJoe">
-                <div class="foodtruckHeader">
-                    <img src="images/pj-icon.png" alt="Pasta Joe logo">
-                    <h4>Pasta Joe</h4>
-                    <img src="images/star-gold-icon.png" alt="Favoriet">
-                </div> <!-- End div foodtruckHeader -->
-                <div class="foodtruckBody">
-                    <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
-                </div>
-                <div class="foodtruckFooter">
-                    <div>
-                        <img src="images/foodtype-icon.png" alt="Type of food icon">
-                        <p class="typoFoodtruckFooter">Italiaans</p>
-                    </div>
-                    <div>
-                        <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
-                        <p class="typoFoodtruckFooter">2 Chefs</p>
-                    </div>
-                    <div>
-                        <img src="images/money-icon.png" alt="Kosten Per Persoon">
-                        <p class="typoFoodtruckFooter">8,60</p>
-                    </div>
-                </div> <!-- End div foodtruck Footer -->
-            </article>
+            <div class="gridContainer">
+                <article class="foodtruck">
+                    <a href="detailpagina.html">
+                        <h4 class="foodtruckHeader">Pasta Joe</h4>
+                        <div class="foodtruckBodyPJ">
+                            <!---DIV BODY -->
+                            <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
+                        </div>
+                        <!---EIND DIV BODY -->
+                        <div class="foodtruckFooter">
+                            <!-- DIV FOODTRUCK FOOTER -->
+                            <div>
+                                <img src="images/foodtype-icon.png" alt="Type of food icon">
+                                <p class="typoFoodtruckFooter">Italiaans</p>
+                            </div>
+                            <div>
+                                <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                                <p class="typoFoodtruckFooter">3 Chefs</p>
+                            </div>
+                            <div>
+                                <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                                <p class="typoFoodtruckFooter">8,60</p>
+                            </div>
+                        </div> <!-- End div foodtruck Footer -->
+                    </a>
+                </article>
 
-            <article class="pastaJoe">
-                <div class="foodtruckHeader">
-                    <img src="images/pj-icon.png" alt="Pasta Joe logo">
-                    <h4>Pasta Joe</h4>
-                    <img src="images/star-gold-icon.png" alt="Favoriet">
-                </div> <!-- End div foodtruckHeader -->
-                <div class="foodtruckBody">
-                    <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
-                </div>
-                <div class="foodtruckFooter">
-                    <div>
-                        <img src="images/foodtype-icon.png" alt="Type of food icon">
-                        <p class="typoFoodtruckFooter">Italiaans</p>
-                    </div>
-                    <div>
-                        <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
-                        <p class="typoFoodtruckFooter">2 Chefs</p>
-                    </div>
-                    <div>
-                        <img src="images/money-icon.png" alt="Kosten Per Persoon">
-                        <p class="typoFoodtruckFooter">8,60</p>
-                    </div>
-                </div> <!-- End div foodtruck Footer -->
-            </article>
+                <article class="foodtruck">
+                    <a href="detailpagina.html">
+                        <h4 class="foodtruckHeader">Jhonney doodle</h4>
+                        <div class="foodtruckBodyJD">
+                            <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
+                        </div>
+                        <div class="foodtruckFooter">
+                            <div>
+                                <img src="images/foodtype-icon.png" alt="Type of food icon">
+                                <p class="typoFoodtruckFooter">German</p>
+                            </div>
+                            <div>
+                                <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                                <p class="typoFoodtruckFooter">2 Chefs</p>
+                            </div>
+                            <div>
+                                <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                                <p class="typoFoodtruckFooter">10,60</p>
+                            </div>
+                        </div> <!-- End div foodtruck Footer -->
+                    </a>
+                </article>
 
-                        <article class="pastaJoe">
-                <div class="foodtruckHeader">
-                    <img src="images/pj-icon.png" alt="Pasta Joe logo">
-                    <h4>Pasta Joe</h4>
-                    <img src="images/star-gold-icon.png" alt="Favoriet">
-                </div> <!-- End div foodtruckHeader -->
-                <div class="foodtruckBody">
-                    <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
-                </div>
-                <div class="foodtruckFooter">
-                    <div>
-                        <img src="images/foodtype-icon.png" alt="Type of food icon">
-                        <p class="typoFoodtruckFooter">Italiaans</p>
-                    </div>
-                    <div>
-                        <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
-                        <p class="typoFoodtruckFooter">2 Chefs</p>
-                    </div>
-                    <div>
-                        <img src="images/money-icon.png" alt="Kosten Per Persoon">
-                        <p class="typoFoodtruckFooter">8,60</p>
-                    </div>
-                </div> <!-- End div foodtruck Footer -->
-            </article>
 
+                <article class="foodtruck">
+                    <a href="detailpagina.html">
+                        <h4 class="foodtruckHeader">Foodtruck Friet</h4>
+                        <div class="foodtruckBodyFF">
+                            <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
+                        </div>
+                        <div class="foodtruckFooter">
+                            <div>
+                                <img src="images/foodtype-icon.png" alt="Type of food icon">
+                                <p class="typoFoodtruckFooter">Belgium</p>
+                            </div>
+                            <div>
+                                <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                                <p class="typoFoodtruckFooter">1 Chefs</p>
+                            </div>
+                            <div>
+                                <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                                <p class="typoFoodtruckFooter">4,90</p>
+                            </div>
+                        </div> <!-- End div foodtruck Footer -->
+                    </a>
+                </article>
+
+                <article class="foodtruck">
+                    <a href="detailpagina.html">
+                        <h4 class="foodtruckHeader">Saps foodtruck</h4>
+                        <div class="foodtruckBodySF">
+                            <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
+                        </div>
+                        <div class="foodtruckFooter">
+                            <div>
+                                <img src="images/foodtype-icon.png" alt="Type of food icon">
+                                <p class="typoFoodtruckFooter">Dutch</p>
+                            </div>
+                            <div>
+                                <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                                <p class="typoFoodtruckFooter">1 Chefs</p>
+                            </div>
+                            <div>
+                                <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                                <p class="typoFoodtruckFooter">2,60</p>
+                            </div>
+                        </div> <!-- End div foodtruck Footer -->
+                    </a>
+                </article>
+
+                <article class="foodtruck">
+                    <a href="detailpagina.html">
+                        <h4 class="foodtruckHeader">Pufkins foodtruck</h4>
+                        <div class="foodtruckBodyPF">
+                            <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
+                        </div>
+                        <div class="foodtruckFooter">
+                            <div>
+                                <img src="images/foodtype-icon.png" alt="Type of food icon">
+                                <p class="typoFoodtruckFooter">Dutch</p>
+                            </div>
+                            <div>
+                                <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                                <p class="typoFoodtruckFooter">3 Chefs</p>
+                            </div>
+                            <div>
+                                <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                                <p class="typoFoodtruckFooter">6,60</p>
+                            </div>
+                        </div> <!-- End div foodtruck Footer -->
+                    </a>
+                </article>
+
+                <article class="foodtruck">
+                    <a href="detailpagina.html">
+                        <h4 class="foodtruckHeader">Fish and Chips </h4>
+                        <div class="foodtruckBodyCF">
+                            <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
+                        </div>
+                        <div class="foodtruckFooter">
+                            <div>
+                                <img src="images/foodtype-icon.png" alt="Type of food icon">
+                                <p class="typoFoodtruckFooter">English</p>
+                            </div>
+                            <div>
+                                <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                                <p class="typoFoodtruckFooter">1 Chefs</p>
+                            </div>
+                            <div>
+                                <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                                <p class="typoFoodtruckFooter">3,60</p>
+                            </div>
+                        </div> <!-- End div foodtruck Footer -->
+                    </a>
+                </article>
+
+            </div> <!-- Eind div grid container -->
 
         </section> <!-- End section uitstekendeBeoordeling -->
 
+
+
+
+
+
+
+
+
+        <section class="nieuw">
+            <h2>Nieuwe foodtrucks</h2>
+            <div class="gridContainer">
+                <article class="foodtruck">
+                    <h4 class="foodtruckHeader">Pasta Joe</h4>
+                    <div class="foodtruckBodyPJ">
+                        <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
+                    </div>
+                    <div class="foodtruckFooter">
+                        <div>
+                            <img src="images/foodtype-icon.png" alt="Type of food icon">
+                            <p class="typoFoodtruckFooter">Italiaans</p>
+                        </div>
+                        <div>
+                            <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                            <p class="typoFoodtruckFooter">3 Chefs</p>
+                        </div>
+                        <div>
+                            <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                            <p class="typoFoodtruckFooter">8,60</p>
+                        </div>
+                    </div> <!-- End div foodtruck Footer -->
+                </article>
+
+                <article class="foodtruck">
+
+                    <h4 class="foodtruckHeader">Jhonney doodle</h4>
+
+                    <div class="foodtruckBodyJD">
+                        <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
+                    </div>
+                    <div class="foodtruckFooter">
+                        <div>
+                            <img src="images/foodtype-icon.png" alt="Type of food icon">
+                            <p class="typoFoodtruckFooter">German</p>
+                        </div>
+                        <div>
+                            <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                            <p class="typoFoodtruckFooter">2 Chefs</p>
+                        </div>
+                        <div>
+                            <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                            <p class="typoFoodtruckFooter">10,60</p>
+                        </div>
+                    </div> <!-- End div foodtruck Footer -->
+                </article>
+
+
+                <article class="foodtruck">
+                    <h4 class="foodtruckHeader">Foodtruck Friet</h4>
+                    <div class="foodtruckBodyFF">
+                        <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
+                    </div>
+                    <div class="foodtruckFooter">
+                        <div>
+                            <img src="images/foodtype-icon.png" alt="Type of food icon">
+                            <p class="typoFoodtruckFooter">Belgium</p>
+                        </div>
+                        <div>
+                            <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                            <p class="typoFoodtruckFooter">1 Chefs</p>
+                        </div>
+                        <div>
+                            <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                            <p class="typoFoodtruckFooter">4,90</p>
+                        </div>
+                    </div> <!-- End div foodtruck Footer -->
+                </article>
+
+                <article class="foodtruck">
+                    <h4 class="foodtruckHeader">Saps foodtruck</h4>
+                    <div class="foodtruckBodySF">
+                        <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
+                    </div>
+                    <div class="foodtruckFooter">
+                        <div>
+                            <img src="images/foodtype-icon.png" alt="Type of food icon">
+                            <p class="typoFoodtruckFooter">Dutch</p>
+                        </div>
+                        <div>
+                            <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                            <p class="typoFoodtruckFooter">1 Chefs</p>
+                        </div>
+                        <div>
+                            <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                            <p class="typoFoodtruckFooter">2,60</p>
+                        </div>
+                    </div> <!-- End div foodtruck Footer -->
+                </article>
+
+                <article class="foodtruck">
+                    <h4 class="foodtruckHeader">Pufkins foodtruck</h4>
+                    <div class="foodtruckBodyPF">
+                        <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
+                    </div>
+                    <div class="foodtruckFooter">
+                        <div>
+                            <img src="images/foodtype-icon.png" alt="Type of food icon">
+                            <p class="typoFoodtruckFooter">Dutch</p>
+                        </div>
+                        <div>
+                            <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                            <p class="typoFoodtruckFooter">3 Chefs</p>
+                        </div>
+                        <div>
+                            <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                            <p class="typoFoodtruckFooter">6,60</p>
+                        </div>
+                    </div> <!-- End div foodtruck Footer -->
+                </article>
+
+                <article class="foodtruck">
+                    <h4 class="foodtruckHeader">Fish and Chips </h4>
+                    <div class="foodtruckBodyCF">
+                        <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
+                    </div>
+                    <div class="foodtruckFooter">
+                        <div>
+                            <img src="images/foodtype-icon.png" alt="Type of food icon">
+                            <p class="typoFoodtruckFooter">English</p>
+                        </div>
+                        <div>
+                            <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                            <p class="typoFoodtruckFooter">1 Chefs</p>
+                        </div>
+                        <div>
+                            <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                            <p class="typoFoodtruckFooter">3,60</p>
+                        </div>
+                    </div> <!-- End div foodtruck Footer -->
+                </article>
+
+            </div> <!-- Eind div grid container -->
+
+        </section> <!-- End section uitstekendeBeoordeling -->
     </main>
 
     <footer>
-
+        <p>&#9400; Nathan Neelis</p>
     </footer>
 </body>
 
