@@ -99,6 +99,7 @@ a {
     color: white;
     padding: 1em;
     border-radius: 0px 5px 5px 0px;
+    -webkit-appearance: none;
 }
 
 .searchButton:hover {
@@ -144,19 +145,19 @@ a {
 
 
 .topHeader {
-    width:80vw;
+    width: 80vw;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .frontHeader {
     width: 60vw;
     margin-top: 2rem;
-    margin-right:2rem;
+    margin-right: 2rem;
 }
 
 .logoTekst {
@@ -480,7 +481,7 @@ footer {
 @media all and (min-width: 1400px) {}
 
 
-/* Responsive Iphone6 START*/
+/* Responsive 800px START*/
 @media all and (min-width: 800px) {
     nav {}
 
