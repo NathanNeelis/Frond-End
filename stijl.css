@@ -477,11 +477,11 @@ footer {
 
 /* responsive */
 /* Responsive 800px START*/
-@media all and (max-width: 1400px) {}
+@media all and (min-width: 1400px) {}
 
 
 /* Responsive Iphone6 START*/
-@media all and (max-width: 700px) {
+@media all and (min-width: 800px) {
     nav {}
 
     ul {
