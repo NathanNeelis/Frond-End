@@ -17,3 +17,10 @@ Ik had een hover gemaakt waarmee de afbeelding van .5 opicty naar 1 ging maar ik
 gradient background:
 https://www.w3schools.com/css/css3_gradients.asp
 Even snel opgezocht hoe de code hiervan ook alweer was.
+
+
+Bronnen checkbox styling:
+https://css-tricks.com/the-checkbox-hack/
+https://stackoverflow.com/questions/7642277/css-styled-a-checkbox-to-look-like-a-button-is-there-a-hover
+http://jsfiddle.net/zAFND/4/
+https://github.com/flatlogic/awesome-bootstrap-checkbox/issues/77
