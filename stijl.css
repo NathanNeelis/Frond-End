@@ -213,7 +213,7 @@ header section:first-of-type form {
 */
 
 .sorteren input[type=checkbox]:focus {
-    -webkit-appearance: none;
+/*    -webkit-appearance: none;*/
     outline: none;
 }
 
