@@ -204,11 +204,13 @@ header section:first-of-type form {
     display: block;
 }
 
+/*
 .sorteren input[type=checkbox]:focus + span {
     background-color: #e6007e;
     color: #fff;
 
 }
+*/
 
 .sorteren input[type=checkbox]:focus {
     -webkit-appearance: none;
@@ -615,6 +617,30 @@ footer {
         width: 30vw;
 
     }
+
+
+/*
+        FORM
+
+    .sorteren:hover {
+    background-color: #e6007e;
+    color: white;
+}
+
+
+    .sorteren input[type=checkbox]:focus + span {
+        background-color: #e6007e;
+        color: #fff;
+
+    }
+
+    .sorteren input[type=checkbox]:focus {
+        -webkit-appearance: none;
+        outline: none;
+    }
+*/
+
+
 
 
 
