@@ -167,11 +167,11 @@ a {
 /*--------------------------- Form CHECKBOXES --------------------------------*/
 /*--------------------------- Form CHECKBOXES --------------------------------*/
 
-header section:first-of-type form{
+header section:first-of-type form {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     margin: 1.5em auto 0 auto;
 }
 
@@ -183,20 +183,19 @@ header section:first-of-type form{
     display: block;
     width: 8rem;
     transition: all .3s ease-in;
+    color: #4a4a49;
 
 }
 
-.sorteren:hover{
+.sorteren:hover {
     background-color: #e6007e;
-    color: #fff;
+    color: white;
 }
 
-.sorteren span{
-    color:#4a4a49;
-}
 
 .sorteren label {
     width: 4.0em;
+    cursor: pointer;
 }
 
 .sorteren label span {
@@ -205,11 +204,21 @@ header section:first-of-type form{
     display: block;
 }
 
-.sorteren label input[type=checkbox] {
-    position: absolute;
-    left: -2em;
+.sorteren input[type=checkbox]:focus + span {
+    background-color: #e6007e;
+    color: #fff;
+
 }
 
+.sorteren input[type=checkbox]:focus {
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.sorteren input[type=checkbox] {
+    position: absolute;
+    z-index: -1;
+}
 
 .sorteren input[type=checkbox]:checked + span {
     background-color: #e6007e;
