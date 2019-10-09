@@ -178,8 +178,6 @@ header section:first-of-type form {
 .sorteren {
     margin: .5em;
     background-color: white;
-    border-radius: .1rem;
-    border: 1px solid #e6007e;
     display: block;
     width: 8rem;
     transition: all .3s ease-in;
@@ -206,21 +204,18 @@ DEZE STAAT NU IN DE MEDIA QUERY
     text-align: center;
     padding: 1em;
     display: block;
+    border-radius: .1rem;
+    border: 1px solid #e6007e;
 }
 
-/*
 .sorteren input[type=checkbox]:focus + span {
-    background-color: #e6007e;
-    color: #fff;
+    border: 1px solid blue;
 
 }
 
-HOE KAN IK HIER DE BORDER VAN DE DIV TARGETTEN?
-
-*/
 
 .sorteren input[type=checkbox]:focus {
-/*    -webkit-appearance: none;*/
+    -webkit-appearance: none;
     outline: none;
 }
 
@@ -236,6 +231,12 @@ HOE KAN IK HIER DE BORDER VAN DE DIV TARGETTEN?
 
 }
 
+/*
+.sorteren < input[type=chechbkox]:focus {
+    border: 1px solid lightblue;
+    background-color:green;
+}
+*/
 
 /*--------------------------- foodtruck section ------------------------------*/
 /*--------------------------- foodtruck section ------------------------------*/
@@ -626,12 +627,12 @@ footer {
     }
 
 
-/*        FORM CHECKBOXES */
+    /*        FORM CHECKBOXES */
 
     .sorteren:hover {
-    background-color: #e6007e;
-    color: white;
-}
+        background-color: #e6007e;
+        color: white;
+    }
 
 
 
