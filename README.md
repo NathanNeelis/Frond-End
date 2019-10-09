@@ -24,3 +24,11 @@ https://css-tricks.com/the-checkbox-hack/ <br/>
 https://stackoverflow.com/questions/7642277/css-styled-a-checkbox-to-look-like-a-button-is-there-a-hover <br/>
 http://jsfiddle.net/zAFND/4/ <br/>
 https://github.com/flatlogic/awesome-bootstrap-checkbox/issues/77 <br/>
+
+
+
+Range slider stylen:<br/>
+https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ <br/>
+https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html <br/>
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_rangeslider <br/>
+
