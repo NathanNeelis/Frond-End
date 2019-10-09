@@ -192,6 +192,8 @@ header section:first-of-type form {
     background-color: #e6007e;
     color: white;
 }
+
+DEZE STAAT NU IN DE MEDIA QUERY
 */
 
 
@@ -212,11 +214,14 @@ header section:first-of-type form {
     color: #fff;
 
 }
+
+HOE KAN IK HIER DE BORDER VAN DE DIV TARGETTEN?
+
 */
 
 .sorteren input[type=checkbox]:focus {
 /*    -webkit-appearance: none;*/
-/*    outline: none;*/
+    outline: none;
 }
 
 .sorteren input[type=checkbox] {
@@ -621,7 +626,7 @@ footer {
     }
 
 
-/*        FORM*/
+/*        FORM CHECKBOXES */
 
     .sorteren:hover {
     background-color: #e6007e;
