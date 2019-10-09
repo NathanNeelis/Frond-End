@@ -22,7 +22,14 @@
         <nav>
             <ul>
                 <li>
-                    <div class="searchContainer"><input type="text" placeholder="Probeer eens “Italiaans” of “Hamburger”" id="search"><input type="submit" value="Search" class="searchButton"></div>
+                    <form action="#" class="searchContainer">
+
+                        <label for="search">Waar ben je naar op zoek?</label>
+                        <input type="text" placeholder="Probeer eens “Italiaans” of “Hamburger”" id="search">
+
+                        <label for="searchButton">Nu zoeken</label>
+                        <input type="submit" value="Search" id="searchButton">
+                    </form>
                 </li>
                 <li><a href="index.html">
                         <div class="purpleHover">
@@ -51,32 +58,41 @@
             <form action="#">
                 <div class="sorteren">
                     <label for="prijs">
-                        <input type="checkbox" id="prijs" name="prijs" unchecked><span>Prijs</span>
+                        <input type="checkbox" id="prijs" name="prijs"><span>Prijs</span>
                     </label>
                 </div>
 
                 <div class="sorteren">
                     <label for="datum">
-                    <input type="checkbox" id="datum" name="datum" unchecked>
-                    <span>Datum</span>
+                        <input type="checkbox" id="datum" name="datum">
+                        <span>Datum</span>
                     </label>
                 </div>
 
                 <div class="sorteren">
                     <label for="locatie">
-                    <input type="checkbox" id="locatie" name="locatie" unchecked>
-                    <span>Locatie</span>
+                        <input type="checkbox" id="locatie" name="locatie">
+                        <span>Locatie</span>
                     </label>
                 </div>
 
                 <div class="sorteren">
                     <label for="gerechten">
-                    <input type="checkbox" id="gerechten" name="gerechten" unchecked>
-                    <span>Gerechten</span>
+                        <input type="checkbox" id="gerechten" name="gerechten">
+                        <span>Gerechten</span>
                     </label>
                 </div>
+            </form>
+        </section>
 
 
+<!--       DIT MOET VERDWIJNEN-->
+        <section>
+            <form action="#" class="subFormHide">
+                <div class="subForm">
+                <label for="prijsIndicatie">Prijs indicatie</label>
+                <input type="range" id="prijsIndicatie" name="prijsIndiciatie" min="3" max="25">
+                </div>
             </form>
         </section>
 
@@ -387,6 +403,10 @@
     <footer>
         <p>&#9400; Nathan Neelis</p>
     </footer>
+
+
+    <!-- scripts -->
+    <script src="script.js"></script>
 </body>
 
 </html>
