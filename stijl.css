@@ -187,10 +187,12 @@ header section:first-of-type form {
 
 }
 
+/*
 .sorteren:hover {
     background-color: #e6007e;
     color: white;
 }
+*/
 
 
 .sorteren label {
@@ -214,7 +216,7 @@ header section:first-of-type form {
 
 .sorteren input[type=checkbox]:focus {
 /*    -webkit-appearance: none;*/
-    outline: none;
+/*    outline: none;*/
 }
 
 .sorteren input[type=checkbox] {
@@ -619,8 +621,7 @@ footer {
     }
 
 
-/*
-        FORM
+/*        FORM*/
 
     .sorteren:hover {
     background-color: #e6007e;
@@ -628,17 +629,6 @@ footer {
 }
 
 
-    .sorteren input[type=checkbox]:focus + span {
-        background-color: #e6007e;
-        color: #fff;
-
-    }
-
-    .sorteren input[type=checkbox]:focus {
-        -webkit-appearance: none;
-        outline: none;
-    }
-*/
 
 
 
