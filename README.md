@@ -32,3 +32,13 @@ https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ <br/>
 https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html <br/>
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_rangeslider <br/>
 
+
+
+
+Nog te doen:
+Toegankelijkheid: 
+  - Hoe skip ik tabs als iets verborgen is?
+Responsive
+  - Nacht/dag modus
+CSS Animatie toevoegen
+  
