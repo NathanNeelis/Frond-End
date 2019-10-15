@@ -22,7 +22,7 @@
         <nav>
             <ul>
                 <li>
-                    <form action="#" class="searchContainer">
+                    <form action="#">
 
                         <label for="search">Waar ben je naar op zoek?</label>
                         <input type="text" placeholder="Probeer eens “Italiaans” of “Hamburger”" id="search">
@@ -57,81 +57,87 @@
 
 
 
-        <img src="images/Saps-foodtruck.jpg" alt="Foodtruck van Saps" class="hero">
+            <img src="images/Saps-foodtruck.jpg" alt="Foodtruck van Saps">
+            <article>
+                <div>
+                    <img src="images/sf-icon.png" alt="Saps logo" id="sfLogo">
+                    <h4>Saps foodtruck</h4>
+                </div>
+                <div>
+                    <img src="images/foodtype-icon-pink.png" alt="Type of food icon">
+                    <p class="typoTitleFoodtruck">Dutch</p>
+                </div>
+                <div>
+                    <img src="images/Chefs-icon-pink.png" alt="Aantal chefs icon">
+                    <p class="typoTitleFoodtruck">1 Chefs</p>
+                </div>
+                <div>
+                    <img src="images/money-icon-pink.png" alt="Kosten Per Persoon">
+                    <p class="typoTitleFoodtruck">3,60</p>
+                </div>
+            </article> <!-- End article foodtruck Footer -->
 
-        <div class="titleFoodtruck">
-            <div>
-                <img src="images/sf-icon.png" alt="Saps logo" id="sfLogo">
-                <h4>Saps foodtruck</h4>
-            </div>
-            <div>
-                <img src="images/foodtype-icon-pink.png" alt="Type of food icon">
-                <p class="typoTitleFoodtruck">Dutch</p>
-            </div>
-            <div>
-                <img src="images/Chefs-icon-pink.png" alt="Aantal chefs icon">
-                <p class="typoTitleFoodtruck">1 Chefs</p>
-            </div>
-            <div>
-                <img src="images/money-icon-pink.png" alt="Kosten Per Persoon">
-                <p class="typoTitleFoodtruck">3,60</p>
-            </div>
-        </div> <!-- End div foodtruck Footer -->
 
     </header>
 
     <main>
 
-        <div class="info">
+            <!--Class kan er niet uit, dan pas je ook de frontpage aan -->
+            <article class="info">
+                <h4>Product gegevens</h4>
+                <div class="gegevens">
+                    <dl>
+                        <dt>Type voedsel: </dt>
+                        <dd>Sapjes en Fruit</dd>
+                        <dt>Basisingrediënten: </dt>
+                        <dd>Fruit, groenten, yoghurt, kwark</dd>
+                        <dt>Keuken: </dt>
+                        <dd>Dutch</dd>
+                        <dt>Diëten: </dt>
+                        <dd> Vegatarisch, Biologisch</dd>
+                        <dt> Allergieën: </dt>
+                        <dd>Gluten, noten</dd>
+                    </dl>
+                </div>
+            </article>
 
-            <h4>Product gegevens</h4>
-            <div class="gegevens">
-                <p>Type voedsel: </p>
-                <p>Sapjes en Fruit</p>
-                <p>Basisingrediënten: </p>
-                <p>Fruit, groenten, yoghurt, kwark</p>
-                <p>Keuken: </p>
-                <p>Dutch</p>
-                <p>Diëten: </p>
-                <p> Vegatarisch, Biologisch</p>
-                <p> Allergieën: </p>
-                <p>Gluten, noten</p>
-            </div>
+            <!--Class kan er wel uit denk?-->
+            <article class="info">
+                <h4>Foodtruck gegevens</h4>
+                <div class="gegevens">
+                    <dl>
+                        <dt>Klanten bedienen: </dt>
+                        <dd>100 klanten per uur.</dd>
+                        <dt>Personeel: </dt>
+                        <dd>1 personeelsleden.</dd>
+                        <dt>Gemiddelde prijs: </dt>
+                        <dd>€ 3,60 p.p.</dd>
+                        <dt>Bedieningsregio: </dt>
+                        <dd>Nederland.</dd>
+                        <dt>Benodigde faciliteiten: </dt>
+                        <dd>Ruimte (5m2), WiFi/netwerk.</dd>
+                        <dt>Eigen meubilair: </dt>
+                        <dd>Statafels, prullenbak.</dd>
+                        <dt>Type evenementen: </dt>
+                        <dd>Bruiloften, bedrijfsevents, festivals, promotie events...</dd>
+                    </dl>
+                </div>
+            </article>
+
+            <!--Class kan er wel uit denk?-->
+            <article class="info">
+                <h4>Menukaart</h4>
+                <button type="button" class="button"><i class="far fa-file-pdf"></i>Open de menukaart</button>
+            </article>
 
 
-        </div>
+            <article class="info">
+                <h4>Deze foodtruck op jouw event?</h4>
+                <button type="button" class="button"><i class="far fa-envelope"></i>Reserveren</button>
+                <button type="button" class="button"><i class="far fa-comment fa-commentt"></i>Contact</button>
+            </article>
 
-        <div class="info">
-            <h4>Foodtruck gegevens</h4>
-            <div class="gegevens">
-                <p>Klanten bedienen: </p>
-                <p>100 klanten per uur.</p>
-                <p>Personeel: </p>
-                <p>1 personeelsleden.</p>
-                <p>Gemiddelde prijs: </p>
-                <p>€ 3,60 p.p.</p>
-                <p>Bedieningsregio: </p>
-                <p>Nederland.</p>
-                <p>Benodigde faciliteiten: </p>
-                <p>Ruimte (5m2), WiFi/netwerk.</p>
-                <p>Eigen meubilair: </p>
-                <p>Statafels, prullenbak.</p>
-                <p>Type evenementen: </p>
-                <p>Bruiloften, bedrijfsevents, festivals, promotie events...</p>
-            </div>
-        </div>
 
-        <div class="info">
-            <h4>Menukaart</h4>
-            <a href="#"><button type="button" class="button"><i class="far fa-file-pdf"></i>Download de menukaart</button></a>
-        </div>
-
-        <div class="info">
-            <h4>Deze foodtruck op jouw event?</h4>
-            <a href="#"><button type="button" class="button"><i class="far fa-envelope"></i>Reserveren</button></a>
-            <a href="#"><button type="button" class="button"><i class="far fa-comment fa-commentt"></i>Contact</button></a>
-
-        </div>
     </main>
 
     <footer>

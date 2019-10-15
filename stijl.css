@@ -61,7 +61,7 @@ li:first-child {
     display: inline-block;
     padding: .5em 1em .5em 0em;
     font-size: 1.7em;
-
+    /*    dit zorgt ervoor dat de icons naast elkaar komen te staan in het menu op mobile */
 }
 
 .menuselected {
@@ -69,13 +69,15 @@ li:first-child {
     padding: .5em 1em .5em 0;
     font-size: 1.7em;
     color: #e6007e;
+    /*    Dit zorgt ervoor dat het menu icoontje van de huidige pagina roze is */
 
 }
 
-.purpleHover:hover,
-.purpleHover:focus {
+ul li a:hover,
+ul li a:focus {
     color: #e6007e;
     transition-duration: 0.5s;
+    outline: none;
 }
 
 a {
@@ -87,7 +89,7 @@ a {
 
 
 /*--------------------------- SEARCH FIELD MENU ------------------------------*/
-.searchContainer {
+ul li form {
     display: inline-flex;
     border: 0px solid #4a4a49;
     border-radius: 5px;
@@ -95,7 +97,7 @@ a {
 
 }
 
-.searchContainer label {
+ul li form label {
     opacity: 0;
     position: absolute;
 }
@@ -177,10 +179,16 @@ header section:first-of-type form {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 1.5em auto 0 auto;
+    margin: 1em auto 0 auto;
 }
 
-.sorteren {
+header section:first-of-type h3 {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+header section form div {
     margin: .5em;
     background-color: white;
     display: block;
@@ -190,22 +198,13 @@ header section:first-of-type form {
 
 }
 
-/*
-.sorteren:hover {
-    background-color: #e6007e;
-    color: white;
-}
 
-DEZE STAAT NU IN DE MEDIA QUERY
-*/
-
-
-.sorteren label {
+header section form div label {
     width: 4.0em;
     cursor: pointer;
 }
 
-.sorteren label span {
+header section form div label span {
     text-align: center;
     padding: 1em;
     display: block;
@@ -213,23 +212,23 @@ DEZE STAAT NU IN DE MEDIA QUERY
     border: 1px solid #e6007e;
 }
 
-.sorteren input[type=checkbox]:focus + span {
+header section form div input[type=checkbox]:focus + span {
     border: 1px solid blue;
 
 }
 
 
-.sorteren input[type=checkbox]:focus {
+header section form div input[type=checkbox]:focus {
     -webkit-appearance: none;
     outline: none;
 }
 
-.sorteren input[type=checkbox] {
+header section form div input[type=checkbox] {
     position: absolute;
     z-index: -1;
 }
 
-.sorteren input[type=checkbox]:checked + span {
+header section form div input[type=checkbox]:checked + span {
     background-color: #e6007e;
     color: #fff;
 }
@@ -246,8 +245,6 @@ DEZE STAAT NU IN DE MEDIA QUERY
     display: flex;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 40%;
     margin: 0 auto;
     /*    opacity: 0;*/
 
@@ -255,17 +252,32 @@ DEZE STAAT NU IN DE MEDIA QUERY
 
 .subForm label {
     display: block;
-    margin: 1.5em 0;
+    margin: 1.5em auto;
     font-weight: 700;
     color: #e6007e;
 
 }
+
+.subForm input[type=date] {
+    padding: 1em;
+    border: 1px solid #e6007e;
+    width: 30vw;
+    margin: 0 auto;
+}
+
+.subForm input[type=date]:focus {
+    border: 1px solid blue;
+    outline: none;
+}
+
 
 .subForm input[type=range] {
     -webkit-appearance: none;
     background-color: #999999;
     height: .3rem;
     outline: none;
+    width: 40vw;
+    margin: 0 auto;
 }
 
 .subForm input[type=range]:focus::-webkit-slider-thumb {
@@ -285,22 +297,43 @@ DEZE STAAT NU IN DE MEDIA QUERY
 
 
 /*STIJL VOOR JAVASCRIPT HIDE/SHOW */
-.subFormHide {
+/*PRIJS INDICIATIE*/
+.formPrijsHide {
     opacity: 0;
-    transition: all 1s ease-out;
+    position: absolute;
+    top: -600px;
+    left: 0;
+    transition: all 1.5s ease-out .3s;
+
 }
 
-.subFormShow {
+.formPrijsShow {
+    position: inherit;
+    opacity: 1;
+}
+
+/*DATUM*/
+.formDateHide {
+    opacity: 0;
+    position: absolute;
+    top: -600px;
+    transition: all 1.5s ease-out .3s;
+
+}
+
+.formDateShow {
+    position: inherit;
     opacity: 1;
 
 }
 
+
 /*--------------------------- foodtruck section ------------------------------*/
 /*--------------------------- foodtruck section ------------------------------*/
 /*--------------------------- foodtruck section ------------------------------*/
 
 
-.uitstekendeBeoordeling {
+main section:first-of-type {
     padding: 1rem;
     margin: 2rem auto 0 auto;
     max-width: 90vw;
@@ -501,23 +534,23 @@ footer {
 /*--------------------------- detail pagina --------------------------------*/
 
 
-.hero {
+header  img {
     width: 100vw;
 }
 
-.titleFoodtruck {
+header article {
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
-.titleFoodtruck h4 {
+header article h4 {
     padding-left: .5rem;
     padding-right: 2rem;
 
 }
 
-.titleFoodtruck div {
+header article div {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -527,7 +560,7 @@ footer {
 }
 
 
-.titleFoodtruck img {
+header article img {
     width: 30%;
     margin: .5rem 0 .5rem 0;
     /*    Dit zijn de iconen in de zwarte balk*/
@@ -554,7 +587,7 @@ footer {
 
 }
 
-.gegevens {
+dl {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .5rem;
@@ -573,14 +606,15 @@ footer {
 .button {
     padding: 1rem;
     border-radius: .5rem;
-    background-color: #e6007e;
-    color: white;
-    border: .1rem solid #e6007e;
+    color: #4a4a49;
+    background-color: white;
+    border: 1px solid #e6007e;
     font-family: 'Quicksand', sans-serif;
 }
 
 .button:hover {
-    padding: 1.1rem;
+    background-color: #e6007e;
+    color: white;
     transition-duration: 0.5s;
 
 }
@@ -686,14 +720,18 @@ footer {
 
     /*        FORM CHECKBOXES */
 
-    .sorteren:hover {
+    header section form div:hover {
         background-color: #e6007e;
         color: white;
     }
 
 
 
+    /*    FORM TOGGLES */
+    .subForm input[type=date] {
+        width: 20vw;
 
+    }
 
 
 

@@ -22,7 +22,7 @@
         <nav>
             <ul>
                 <li>
-                    <form action="#" class="searchContainer">
+                    <form action="#">
 
                         <label for="search">Waar ben je naar op zoek?</label>
                         <input type="text" placeholder="Probeer eens “Italiaans” of “Hamburger”" id="search">
@@ -32,51 +32,46 @@
                     </form>
                 </li>
                 <li><a href="index.html">
-                        <div class="purpleHover">
-                            <div class="menuselected"><i class="fas fa-search"></i></div>Ontdek
-                        </div>
+                        <div class="menuselected"><i class="fas fa-search"></i></div>Ontdek
                     </a></li>
                 <li><a href="#">
-                        <div class="purpleHover">
-                            <div class="menuicon"><i class="fas fa-truck"></i></div>Boekingen
-                        </div>
+                        <div class="menuicon"><i class="fas fa-truck"></i></div>Boekingen
                     </a></li>
                 <li><a href="#">
-                        <div class="purpleHover">
-                            <div class="menuicon"><i class="far fa-comment"></i></div>Inbox
-                        </div>
+                        <div class="menuicon"><i class="far fa-comment"></i></div>Inbox
                     </a></li>
                 <li><a href="#">
-                        <div class="purpleHover">
-                            <div class="menuicon"><i class="far fa-user"></i></div>Profiel
-                        </div>
+                        <div class="menuicon"><i class="far fa-user"></i></div>Profiel
                     </a></li>
             </ul>
         </nav>
 
+
+        <!--     FILTER OPTIONS -->
         <section>
+            <h3>Filter options</h3>
             <form action="#">
-                <div class="sorteren">
+                <div>
                     <label for="prijs">
                         <input type="checkbox" id="prijs" name="prijs"><span>Prijs</span>
                     </label>
                 </div>
 
-                <div class="sorteren">
+                <div>
                     <label for="datum">
                         <input type="checkbox" id="datum" name="datum">
                         <span>Datum</span>
                     </label>
                 </div>
 
-                <div class="sorteren">
+                <div>
                     <label for="locatie">
                         <input type="checkbox" id="locatie" name="locatie">
                         <span>Locatie</span>
                     </label>
                 </div>
 
-                <div class="sorteren">
+                <div>
                     <label for="gerechten">
                         <input type="checkbox" id="gerechten" name="gerechten">
                         <span>Gerechten</span>
@@ -84,29 +79,39 @@
                 </div>
             </form>
         </section>
+        <!--   EIND  FILTER OPTIONS -->
 
+        <!--     FORMS  DIE GETOGGLED WORDEN -->
 
-<!--       DIT MOET VERDWIJNEN-->
-        <section>
-            <form action="#" class="subFormHide">
-                <div class="subForm">
-                <label for="prijsIndicatie">Prijs indicatie</label>
-                <input type="range" id="prijsIndicatie" name="prijsIndiciatie" min="3" max="25">
-                </div>
-            </form>
-        </section>
+        <form action="#" class="formPrijsHide">
+            <div class="subForm">
+                <label for="prijsIndicatie">Max bedrag: € <span id="bedrag"></span></label>
+                <input type="range" id="prijsIndicatie" name="prijsIndiciatie" min="3" max="25" value="10">
+            </div>
+        </form>
+
+        <form action="#" class="formDateHide">
+            <div class="subForm">
+                <label for="startHuur">Start verhuurdatum:</label>
+                <input type="date" id="startHuur" name="startHuur" />
+
+                <label for="eindHuur">Eind verhuurdatum:</label>
+                <input type="date" id="eindHuur" name="eindHuur"/>
+            </div>
+        </form>
+
+        <!--     EIND FORMS  DIE GETOGGLED WORDEN -->
 
         <section class="topHeader">
             <img src="images/header.png" alt="header image van een getekende foodtruck" class="frontHeader">
             <h1 class="logoTekst">Foodtruck booking</h1>
-
         </section>
 
         <!--       BRONNEN header image. <a href="https://www.freepik.com/free-photos-vectors/food">Food vector created by freepik - www.freepik.com</a>-->
     </header>
 
     <main>
-        <section class="uitstekendeBeoordeling">
+        <section>
             <h2>Trucks met een uitstekende beoordeling</h2>
             <div class="gridContainer">
                 <article class="foodtruck">
@@ -267,6 +272,7 @@
             <h2>Nieuwe foodtrucks</h2>
             <div class="gridContainer">
                 <article class="foodtruck">
+                   <a href="detailpagina.html">
                     <h4 class="foodtruckHeader">Pasta Joe</h4>
                     <div class="foodtruckBodyPJ">
                         <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
@@ -285,12 +291,12 @@
                             <p class="typoFoodtruckFooter">8,60</p>
                         </div>
                     </div> <!-- End div foodtruck Footer -->
+                    </a>
                 </article>
 
                 <article class="foodtruck">
-
+                   <a href="detailpagina.html">
                     <h4 class="foodtruckHeader">Jhonney doodle</h4>
-
                     <div class="foodtruckBodyJD">
                         <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
                     </div>
@@ -308,10 +314,12 @@
                             <p class="typoFoodtruckFooter">10,60</p>
                         </div>
                     </div> <!-- End div foodtruck Footer -->
+                    </a>
                 </article>
 
 
                 <article class="foodtruck">
+                   <a href="detailpagina.html">
                     <h4 class="foodtruckHeader">Foodtruck Friet</h4>
                     <div class="foodtruckBodyFF">
                         <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
@@ -330,9 +338,11 @@
                             <p class="typoFoodtruckFooter">4,90</p>
                         </div>
                     </div> <!-- End div foodtruck Footer -->
+                    </a>
                 </article>
 
                 <article class="foodtruck">
+                   <a href="detailpagina.html">
                     <h4 class="foodtruckHeader">Saps foodtruck</h4>
                     <div class="foodtruckBodySF">
                         <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
@@ -351,9 +361,11 @@
                             <p class="typoFoodtruckFooter">2,60</p>
                         </div>
                     </div> <!-- End div foodtruck Footer -->
+                    </a>
                 </article>
 
                 <article class="foodtruck">
+                   <a href="detailpagina.html">
                     <h4 class="foodtruckHeader">Pufkins foodtruck</h4>
                     <div class="foodtruckBodyPF">
                         <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
@@ -372,9 +384,11 @@
                             <p class="typoFoodtruckFooter">6,60</p>
                         </div>
                     </div> <!-- End div foodtruck Footer -->
+                    </a>
                 </article>
 
                 <article class="foodtruck">
+                   <a href="detailpagina.html">
                     <h4 class="foodtruckHeader">Fish and Chips </h4>
                     <div class="foodtruckBodyCF">
                         <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
@@ -393,6 +407,7 @@
                             <p class="typoFoodtruckFooter">3,60</p>
                         </div>
                     </div> <!-- End div foodtruck Footer -->
+                    </a>
                 </article>
 
             </div> <!-- Eind div grid container -->
