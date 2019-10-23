@@ -33,12 +33,15 @@ https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.ht
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_rangeslider <br/>
 
 
+CSS Selectors:<br/>
+https://tympanus.net/codrops/css_reference/nth-child/<br/>
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators<br/>
+
+SVG:<br/>
+https://www.youtube.com/watch?v=lVuDLI9euI8<br/>
+
+Semantiek, section vs article:<br/>
+https://stackoverflow.com/questions/7549561/section-vs-article-html5<br/>
 
 
-Nog te doen:
-Toegankelijkheid: 
-  - Hoe skip ik tabs als iets verborgen is?
-Responsive
-  - Nacht/dag modus
-CSS Animatie toevoegen
   
