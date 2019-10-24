@@ -679,7 +679,7 @@ dl {
     grid-gap: .5rem;
 }
 
-.info p {
+.info dt, .info dd {
     padding: .3em 0em;
     font-family: 'Quicksand', sans-serif;
 }
@@ -836,6 +836,7 @@ dl {
 
     .info {
         width: 50vw;
+
     }
 
 
