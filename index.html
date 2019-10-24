@@ -23,25 +23,28 @@
             <ul>
                 <li>
                     <form action="#">
+                        <fieldset>
+                            <div>
+                                <label for="search">Waar ben je naar op zoek?</label>
+                                <input type="text" placeholder="Probeer eens “Italiaans” of “Hamburger”" id="search">
 
-                        <label for="search">Waar ben je naar op zoek?</label>
-                        <input type="text" placeholder="Probeer eens “Italiaans” of “Hamburger”" id="search">
-
-                        <label for="searchButton">Nu zoeken</label>
-                        <input type="submit" value="Search" id="searchButton">
+                                <label for="searchButton">Nu zoeken</label>
+                                <input type="submit" value="Search" id="searchButton">
+                            </div>
+                        </fieldset>
                     </form>
                 </li>
                 <li><a href="index.html">
                         <div class="menuselected"><i class="fas fa-search"></i></div>Ontdek
                     </a></li>
                 <li><a href="#">
-                        <div class="menuicon"><i class="fas fa-truck"></i></div>Boekingen
+                        <div><i class="fas fa-truck"></i></div>Boekingen
                     </a></li>
                 <li><a href="#">
-                        <div class="menuicon"><i class="far fa-comment"></i></div>Inbox
+                        <div><i class="far fa-comment"></i></div>Inbox
                     </a></li>
                 <li><a href="#">
-                        <div class="menuicon"><i class="far fa-user"></i></div>Profiel
+                        <div><i class="far fa-user"></i></div>Profiel
                     </a></li>
             </ul>
         </nav>
@@ -51,58 +54,72 @@
         <section>
             <h3>Filter options</h3>
             <form action="#">
-                <div>
-                    <label for="prijs">
-                        <input type="checkbox" id="prijs" name="prijs"><span>Prijs</span>
-                    </label>
-                </div>
+                <fieldset>
+                    <div>
+                        <div>
+                           <input type="submit" value="Filter" id="filterButton1">
+                            <label for="filterButton1"><span class="filter">Nu filteren</span></label>
 
-                <div>
-                    <label for="datum">
-                        <input type="checkbox" id="datum" name="datum">
-                        <span>Datum</span>
-                    </label>
-                </div>
+                        </div>
 
-                <div>
-                    <label for="locatie">
-                        <input type="checkbox" id="locatie" name="locatie">
-                        <span>Locatie</span>
-                    </label>
-                </div>
+                        <div>
+                            <label for="prijs">
+                                <input type="checkbox" id="prijs" name="prijs"><span>Prijs</span>
+                            </label>
+                        </div>
 
-                <div>
-                    <label for="gerechten">
-                        <input type="checkbox" id="gerechten" name="gerechten">
-                        <span>Gerechten</span>
-                    </label>
-                </div>
+                        <div>
+                            <label for="datum">
+                                <input type="checkbox" id="datum" name="datum">
+                                <span>Datum</span>
+                            </label>
+                        </div>
+
+                        <div>
+                            <label for="locatie">
+                                <input type="checkbox" id="locatie" name="locatie">
+                                <span>Locatie</span>
+                            </label>
+                        </div>
+
+                        <div>
+                            <label for="gerechten">
+                                <input type="checkbox" id="gerechten" name="gerechten">
+                                <span>Gerechten</span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
             </form>
         </section>
         <!--   EIND  FILTER OPTIONS -->
 
         <!--     FORMS  DIE GETOGGLED WORDEN -->
-
         <form action="#" class="formPrijsHide">
-            <div class="subForm">
-                <label for="prijsIndicatie">Max bedrag: € <span id="bedrag"></span></label>
-                <input type="range" id="prijsIndicatie" name="prijsIndiciatie" min="3" max="25" value="10">
-            </div>
+            <fieldset>
+                <div>
+                    <label for="prijsIndicatie">Max bedrag: € <span id="bedrag"></span></label>
+                    <input type="range" id="prijsIndicatie" name="prijsIndiciatie" min="3" max="25" value="10">
+
+                </div>
+            </fieldset>
         </form>
 
         <form action="#" class="formDateHide">
-            <div class="subForm">
-                <label for="startHuur">Start verhuurdatum:</label>
-                <input type="date" id="startHuur" name="startHuur" />
+            <fieldset>
+                <div>
+                    <label for="startHuur">Start verhuurdatum:</label>
+                    <input type="date" id="startHuur" name="startHuur" />
 
-                <label for="eindHuur">Eind verhuurdatum:</label>
-                <input type="date" id="eindHuur" name="eindHuur"/>
-            </div>
+                    <label for="eindHuur">Eind verhuurdatum:</label>
+                    <input type="date" id="eindHuur" name="eindHuur" />
+                </div>
+            </fieldset>
         </form>
 
         <!--     EIND FORMS  DIE GETOGGLED WORDEN -->
 
-        <section class="topHeader">
+        <section>
             <img src="images/header.png" alt="header image van een getekende foodtruck" class="frontHeader">
             <h1 class="logoTekst">Foodtruck booking</h1>
         </section>
@@ -113,10 +130,10 @@
     <main>
         <section>
             <h2>Trucks met een uitstekende beoordeling</h2>
-            <div class="gridContainer">
-                <article class="foodtruck">
+            <div>
+                <article>
                     <a href="detailpagina.html">
-                        <h4 class="foodtruckHeader">Pasta Joe</h4>
+                        <h4>Pasta Joe</h4>
                         <div class="foodtruckBodyPJ">
                             <!---DIV BODY -->
                             <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
@@ -126,127 +143,127 @@
                             <!-- DIV FOODTRUCK FOOTER -->
                             <div>
                                 <img src="images/foodtype-icon.png" alt="Type of food icon">
-                                <p class="typoFoodtruckFooter">Italiaans</p>
+                                <p>Italiaans</p>
                             </div>
                             <div>
                                 <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
-                                <p class="typoFoodtruckFooter">3 Chefs</p>
+                                <p>3 Chefs</p>
                             </div>
                             <div>
                                 <img src="images/money-icon.png" alt="Kosten Per Persoon">
-                                <p class="typoFoodtruckFooter">8,60</p>
+                                <p>8,60</p>
                             </div>
                         </div> <!-- End div foodtruck Footer -->
                     </a>
                 </article>
 
-                <article class="foodtruck">
+                <article>
                     <a href="detailpagina.html">
-                        <h4 class="foodtruckHeader">Jhonney doodle</h4>
+                        <h4>Jhonney doodle</h4>
                         <div class="foodtruckBodyJD">
                             <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
                         </div>
                         <div class="foodtruckFooter">
                             <div>
                                 <img src="images/foodtype-icon.png" alt="Type of food icon">
-                                <p class="typoFoodtruckFooter">German</p>
+                                <p>German</p>
                             </div>
                             <div>
                                 <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
-                                <p class="typoFoodtruckFooter">2 Chefs</p>
+                                <p>2 Chefs</p>
                             </div>
                             <div>
                                 <img src="images/money-icon.png" alt="Kosten Per Persoon">
-                                <p class="typoFoodtruckFooter">10,60</p>
+                                <p>10,60</p>
                             </div>
                         </div> <!-- End div foodtruck Footer -->
                     </a>
                 </article>
 
 
-                <article class="foodtruck">
+                <article>
                     <a href="detailpagina.html">
-                        <h4 class="foodtruckHeader">Foodtruck Friet</h4>
+                        <h4>Foodtruck Friet</h4>
                         <div class="foodtruckBodyFF">
                             <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
                         </div>
                         <div class="foodtruckFooter">
                             <div>
                                 <img src="images/foodtype-icon.png" alt="Type of food icon">
-                                <p class="typoFoodtruckFooter">Belgium</p>
+                                <p>Belgium</p>
                             </div>
                             <div>
                                 <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
-                                <p class="typoFoodtruckFooter">1 Chefs</p>
+                                <p>1 Chefs</p>
                             </div>
                             <div>
                                 <img src="images/money-icon.png" alt="Kosten Per Persoon">
-                                <p class="typoFoodtruckFooter">4,90</p>
+                                <p>4,90</p>
                             </div>
                         </div> <!-- End div foodtruck Footer -->
                     </a>
                 </article>
 
-                <article class="foodtruck">
+                <article>
                     <a href="detailpagina.html">
-                        <h4 class="foodtruckHeader">Saps foodtruck</h4>
+                        <h4>Saps foodtruck</h4>
                         <div class="foodtruckBodySF">
                             <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
                         </div>
                         <div class="foodtruckFooter">
                             <div>
                                 <img src="images/foodtype-icon.png" alt="Type of food icon">
-                                <p class="typoFoodtruckFooter">Dutch</p>
+                                <p>Dutch</p>
                             </div>
                             <div>
                                 <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
-                                <p class="typoFoodtruckFooter">1 Chefs</p>
+                                <p>1 Chefs</p>
                             </div>
                             <div>
                                 <img src="images/money-icon.png" alt="Kosten Per Persoon">
-                                <p class="typoFoodtruckFooter">2,60</p>
+                                <p>2,60</p>
                             </div>
                         </div> <!-- End div foodtruck Footer -->
                     </a>
                 </article>
 
-                <article class="foodtruck">
+                <article>
                     <a href="detailpagina.html">
-                        <h4 class="foodtruckHeader">Pufkins foodtruck</h4>
+                        <h4>Pufkins foodtruck</h4>
                         <div class="foodtruckBodyPF">
                             <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
                         </div>
                         <div class="foodtruckFooter">
                             <div>
                                 <img src="images/foodtype-icon.png" alt="Type of food icon">
-                                <p class="typoFoodtruckFooter">Dutch</p>
+                                <p>Dutch</p>
                             </div>
                             <div>
                                 <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
-                                <p class="typoFoodtruckFooter">3 Chefs</p>
+                                <p>3 Chefs</p>
                             </div>
                             <div>
                                 <img src="images/money-icon.png" alt="Kosten Per Persoon">
-                                <p class="typoFoodtruckFooter">6,60</p>
+                                <p>6,60</p>
                             </div>
                         </div> <!-- End div foodtruck Footer -->
                     </a>
                 </article>
 
-                <article class="foodtruck">
+                <article>
                     <a href="detailpagina.html">
-                        <h4 class="foodtruckHeader">Fish and Chips </h4>
+                        <h4>Fish and Chips </h4>
                         <div class="foodtruckBodyCF">
                             <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
                         </div>
                         <div class="foodtruckFooter">
                             <div>
                                 <img src="images/foodtype-icon.png" alt="Type of food icon">
-                                <p class="typoFoodtruckFooter">English</p>
+                                <p>English</p>
                             </div>
                             <div>
                                 <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
-                                <p class="typoFoodtruckFooter">1 Chefs</p>
+                                <p>1 Chefs</p>
                             </div>
                             <div>
                                 <img src="images/money-icon.png" alt="Kosten Per Persoon">
@@ -268,145 +285,146 @@
 
 
 
-        <section class="nieuw">
+        <section>
             <h2>Nieuwe foodtrucks</h2>
-            <div class="gridContainer">
-                <article class="foodtruck">
-                   <a href="detailpagina.html">
-                    <h4 class="foodtruckHeader">Pasta Joe</h4>
-                    <div class="foodtruckBodyPJ">
-                        <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
-                    </div>
-                    <div class="foodtruckFooter">
-                        <div>
-                            <img src="images/foodtype-icon.png" alt="Type of food icon">
-                            <p class="typoFoodtruckFooter">Italiaans</p>
+            <div>
+
+                <article>
+                    <a href="detailpagina.html">
+                        <h4>Pasta Joe</h4>
+                        <div class="foodtruckBodyPJ">
+                            <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
                         </div>
-                        <div>
-                            <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
-                            <p class="typoFoodtruckFooter">3 Chefs</p>
-                        </div>
-                        <div>
-                            <img src="images/money-icon.png" alt="Kosten Per Persoon">
-                            <p class="typoFoodtruckFooter">8,60</p>
-                        </div>
-                    </div> <!-- End div foodtruck Footer -->
+                        <div class="foodtruckFooter">
+                            <div>
+                                <img src="images/foodtype-icon.png" alt="Type of food icon">
+                                <p>Italiaans</p>
+                            </div>
+                            <div>
+                                <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                                <p>3 Chefs</p>
+                            </div>
+                            <div>
+                                <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                                <p>8,60</p>
+                            </div>
+                        </div> <!-- End div foodtruck Footer -->
                     </a>
                 </article>
 
-                <article class="foodtruck">
-                   <a href="detailpagina.html">
-                    <h4 class="foodtruckHeader">Jhonney doodle</h4>
-                    <div class="foodtruckBodyJD">
-                        <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
-                    </div>
-                    <div class="foodtruckFooter">
-                        <div>
-                            <img src="images/foodtype-icon.png" alt="Type of food icon">
-                            <p class="typoFoodtruckFooter">German</p>
+                <article>
+                    <a href="detailpagina.html">
+                        <h4>Jhonney doodle</h4>
+                        <div class="foodtruckBodyJD">
+                            <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
                         </div>
-                        <div>
-                            <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
-                            <p class="typoFoodtruckFooter">2 Chefs</p>
-                        </div>
-                        <div>
-                            <img src="images/money-icon.png" alt="Kosten Per Persoon">
-                            <p class="typoFoodtruckFooter">10,60</p>
-                        </div>
-                    </div> <!-- End div foodtruck Footer -->
+                        <div class="foodtruckFooter">
+                            <div>
+                                <img src="images/foodtype-icon.png" alt="Type of food icon">
+                                <p>German</p>
+                            </div>
+                            <div>
+                                <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                                <p>2 Chefs</p>
+                            </div>
+                            <div>
+                                <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                                <p>10,60</p>
+                            </div>
+                        </div> <!-- End div foodtruck Footer -->
                     </a>
                 </article>
 
 
-                <article class="foodtruck">
-                   <a href="detailpagina.html">
-                    <h4 class="foodtruckHeader">Foodtruck Friet</h4>
-                    <div class="foodtruckBodyFF">
-                        <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
-                    </div>
-                    <div class="foodtruckFooter">
-                        <div>
-                            <img src="images/foodtype-icon.png" alt="Type of food icon">
-                            <p class="typoFoodtruckFooter">Belgium</p>
+                <article>
+                    <a href="detailpagina.html">
+                        <h4>Foodtruck Friet</h4>
+                        <div class="foodtruckBodyFF">
+                            <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
                         </div>
-                        <div>
-                            <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
-                            <p class="typoFoodtruckFooter">1 Chefs</p>
-                        </div>
-                        <div>
-                            <img src="images/money-icon.png" alt="Kosten Per Persoon">
-                            <p class="typoFoodtruckFooter">4,90</p>
-                        </div>
-                    </div> <!-- End div foodtruck Footer -->
+                        <div class="foodtruckFooter">
+                            <div>
+                                <img src="images/foodtype-icon.png" alt="Type of food icon">
+                                <p>Belgium</p>
+                            </div>
+                            <div>
+                                <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                                <p>1 Chefs</p>
+                            </div>
+                            <div>
+                                <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                                <p>4,90</p>
+                            </div>
+                        </div> <!-- End div foodtruck Footer -->
                     </a>
                 </article>
 
-                <article class="foodtruck">
-                   <a href="detailpagina.html">
-                    <h4 class="foodtruckHeader">Saps foodtruck</h4>
-                    <div class="foodtruckBodySF">
-                        <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
-                    </div>
-                    <div class="foodtruckFooter">
-                        <div>
-                            <img src="images/foodtype-icon.png" alt="Type of food icon">
-                            <p class="typoFoodtruckFooter">Dutch</p>
+                <article>
+                    <a href="detailpagina.html">
+                        <h4>Saps foodtruck</h4>
+                        <div class="foodtruckBodySF">
+                            <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
                         </div>
-                        <div>
-                            <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
-                            <p class="typoFoodtruckFooter">1 Chefs</p>
-                        </div>
-                        <div>
-                            <img src="images/money-icon.png" alt="Kosten Per Persoon">
-                            <p class="typoFoodtruckFooter">2,60</p>
-                        </div>
-                    </div> <!-- End div foodtruck Footer -->
+                        <div class="foodtruckFooter">
+                            <div>
+                                <img src="images/foodtype-icon.png" alt="Type of food icon">
+                                <p>Dutch</p>
+                            </div>
+                            <div>
+                                <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                                <p>1 Chefs</p>
+                            </div>
+                            <div>
+                                <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                                <p>2,60</p>
+                            </div>
+                        </div> <!-- End div foodtruck Footer -->
                     </a>
                 </article>
 
-                <article class="foodtruck">
-                   <a href="detailpagina.html">
-                    <h4 class="foodtruckHeader">Pufkins foodtruck</h4>
-                    <div class="foodtruckBodyPF">
-                        <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
-                    </div>
-                    <div class="foodtruckFooter">
-                        <div>
-                            <img src="images/foodtype-icon.png" alt="Type of food icon">
-                            <p class="typoFoodtruckFooter">Dutch</p>
+                <article>
+                    <a href="detailpagina.html">
+                        <h4>Pufkins foodtruck</h4>
+                        <div class="foodtruckBodyPF">
+                            <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
                         </div>
-                        <div>
-                            <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
-                            <p class="typoFoodtruckFooter">3 Chefs</p>
-                        </div>
-                        <div>
-                            <img src="images/money-icon.png" alt="Kosten Per Persoon">
-                            <p class="typoFoodtruckFooter">6,60</p>
-                        </div>
-                    </div> <!-- End div foodtruck Footer -->
+                        <div class="foodtruckFooter">
+                            <div>
+                                <img src="images/foodtype-icon.png" alt="Type of food icon">
+                                <p>Dutch</p>
+                            </div>
+                            <div>
+                                <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                                <p>3 Chefs</p>
+                            </div>
+                            <div>
+                                <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                                <p>6,60</p>
+                            </div>
+                        </div> <!-- End div foodtruck Footer -->
                     </a>
                 </article>
 
-                <article class="foodtruck">
-                   <a href="detailpagina.html">
-                    <h4 class="foodtruckHeader">Fish and Chips </h4>
-                    <div class="foodtruckBodyCF">
-                        <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
-                    </div>
-                    <div class="foodtruckFooter">
-                        <div>
-                            <img src="images/foodtype-icon.png" alt="Type of food icon">
-                            <p class="typoFoodtruckFooter">English</p>
+                <article>
+                    <a href="detailpagina.html">
+                        <h4>Fish and Chips </h4>
+                        <div class="foodtruckBodyCF">
+                            <img src="images/image-icons-white.png" alt="Like hier je foodtruck. Vega en Biologische icon." class="foodyIcons">
                         </div>
-                        <div>
-                            <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
-                            <p class="typoFoodtruckFooter">1 Chefs</p>
-                        </div>
-                        <div>
-                            <img src="images/money-icon.png" alt="Kosten Per Persoon">
-                            <p class="typoFoodtruckFooter">3,60</p>
-                        </div>
-                    </div> <!-- End div foodtruck Footer -->
+                        <div class="foodtruckFooter">
+                            <div>
+                                <img src="images/foodtype-icon.png" alt="Type of food icon">
+                                <p>English</p>
+                            </div>
+                            <div>
+                                <img src="images/Chefs-icon.png" alt="Aantal chefs icon">
+                                <p>1 Chefs</p>
+                            </div>
+                            <div>
+                                <img src="images/money-icon.png" alt="Kosten Per Persoon">
+                                <p>3,60</p>
+                            </div>
+                        </div> <!-- End div foodtruck Footer -->
                     </a>
                 </article>
 
