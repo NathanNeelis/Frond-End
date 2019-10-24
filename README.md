@@ -43,5 +43,8 @@ https://www.youtube.com/watch?v=lVuDLI9euI8<br/>
 Semantiek, section vs article:<br/>
 https://stackoverflow.com/questions/7549561/section-vs-article-html5<br/>
 
+Animation:<br/>
+https://www.youtube.com/watch?v=f1WMjDx4snI<br/>
+
 
   
