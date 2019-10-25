@@ -275,6 +275,7 @@ header section form div:first-child div:last-child #filterButton1 {
     border-radius: .1rem;
     border: 1px solid green;
     transition: transform .5s ease-out;
+     -webkit-appearance: none;
 }
 
 header section form div:first-child div:last-child #filterButton1:focus {
@@ -391,8 +392,6 @@ main section:first-of-type {
     padding: 1rem;
     margin: 2rem auto 0 auto;
     max-width: 90vw;
-
-
     /*    DIT IS DE CONTAINER VAN ALLE FOODTRUCKS MET EEN UITSTEKENDE BEOORDELING*/
 }
 
